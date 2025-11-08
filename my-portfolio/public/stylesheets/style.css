@@ -1,8 +1,64 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    /* creating the gradient */
+    color: white; 
+    background: linear-gradient(to bottom, #aaaaaa, #736767);
+    background-attachment: fixed;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-a {
-  color: #00B7FF;
+main {
+    /* Sets the readable width of the content */
+    max-width: 800px; 
+    /* 20px top/bottom margin, 'auto' centers the block horizontally */
+    margin: 20px auto;
+    /* allows for space from element edges */ 
+    padding: 20px;
+}
+
+#home, #about, #projects, #contact {
+    /* Centers all headings, paragraphs, and block content horizontally */
+    text-align: center;
+}
+
+header {
+    /* header colour */ 
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+}
+
+nav {
+    padding: 10px 20px;
+    /* Contains the floats */
+    overflow: hidden; 
+}
+
+.logo {
+    /* adjust to the size you want */
+    width: 80px;
+    /* maintains aspect ratio */
+    height: 80px;
+    /* optional: makes it circular */
+    border-radius: 50%; 
+}
+
+nav ul {
+    /* Puts the list on the right */
+    float: right; 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block; /* Makes list items sit side-by-side */
+    margin-left: 20px; /* Separates the links */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
 }
